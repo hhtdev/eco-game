@@ -1,0 +1,25 @@
+html,
+body {
+  background: rgb(241, 127, 16);
+  background: radial-gradient(circle, rgba(241, 127, 16, 1) 0%, rgba(0, 32, 88, 1) 70%);
+  color: #fff;
+}
+
+.page-content {
+  header {
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .container-questions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 15px;
+    }
+  }
+}
