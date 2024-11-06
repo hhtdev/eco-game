@@ -4,8 +4,10 @@ const Reponses = {
   reponse3: 'réponse 3',
 };
 
-export default Reponses;
-
-function displayReponse(reponseBtn) {
-  console.log(reponses[reponseBtn]);
+function displayReponse(reponseNumber) {
+  for (const reponse in Reponses) {
+    if (reponse === reponseNumber) {
+      console.log(Reponses[reponse]);
+    }
+  }
 }
