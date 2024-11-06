@@ -12,7 +12,7 @@ const Reponses = {
 function displayReponse(reponseNumber) {
   for (const reponse in Reponses) {
     if (reponse === reponseNumber) {
-      document.getElementById(reponse).innerHTML = Reponses[reponse];
+      document.getElementById(`${reponse}`).classList.toggle('flipped');
     }
   }
 }
